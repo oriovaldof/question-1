@@ -12,16 +12,16 @@ function romans($value, $typeConvertion = "I")
 
     if (!array_key_exists($typeConvertion, $arType)) die('Enter type I = integer or R = Romans');
 
-    $Converted = '';
+    $converted = '';
     if ($typeConvertion == "R") {
 
         if(!is_numeric($value)) die ('type an integer');
 
-        $Converted = convertRomans($value);
+        $converted = convertRomans($value);
     } else {
-        $Converted = convertInteger($value);
+        $converted = convertInteger($value);
     }
-    echo " The Amount {$value} converted into {$arType[$typeConvertion]} is {$Converted} ";
+    echo " The Amount {$value} converted into {$arType[$typeConvertion]} is {$converted} ";
 }
 /**
  * @abstract Responsible function to convert Roman numbers to integers
