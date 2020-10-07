@@ -55,6 +55,7 @@ function convertInteger($value)
 
 /**
  * @abstract  Responsible function for converting Integers to Romans
+ * @example https://rubsphp.blogspot.com/2011/02/gerando-numeros-romanos.html
  * @param [type] $value
  * @return void
  */
@@ -132,7 +133,9 @@ function convertRomans($value)
 
 /*---------------------------------------------------------------------------------------------------------------*/;
 $value = "MMMCDXXI";
-romans($value, 'I');
+//converting to integer
+romans($value, 'I'); 
 
 $value = "3421";
+//converting to romans
 romans($value, 'R');
